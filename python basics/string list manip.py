@@ -29,13 +29,13 @@ for ch in s:
 for ch in enumerate(s):
     print(ch)    # prints (0, 'a'), (1, 'b'), (2, 'c')
 
+# Iterate with enumerate for index and character, here index and characters are in separate variables
+for index, ch in enumerate(s):
+    print(index, ch)   # prints "0 a", "1 b", "2 c"
+
 # Iterate using range and string indexing
 for i in range(len(s)):
     print(s[i])  # prints 'a', 'b', 'c'
-
-# Iterate with enumerate for index and character
-for index, ch in enumerate(s):
-    print(index, ch)   # prints "0 a", "1 b", "2 c"
 
 # List comprehension to convert string to list of characters
 print([ch for ch in list(s)])  # ['a', 'b', 'c']
